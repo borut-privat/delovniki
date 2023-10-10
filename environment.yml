@@ -1,4 +1,3 @@
 name: abecedarium
 dependencies:
-  - random
-  - pandas
+  - datetime
