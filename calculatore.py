@@ -33,4 +33,4 @@ while num_days > 0:
     if is_weekday(current_date) and current_date not in holidays:
         num_days -= 1
 
-st.write(current_date)
+st.write(current_date,format="DD.MM.YYYY")
