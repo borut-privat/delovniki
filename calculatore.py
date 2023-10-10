@@ -18,7 +18,7 @@ def is_weekday(date):
 holidays = [datetime.date(2023, 8, 15), datetime.date(2023, 8, 14),datetime.date(2023, 10, 31),datetime.date(2023, 11, 1),datetime.date(2023, 12, 25),datetime.date(2023, 12, 26),datetime.date(2024, 1, 1),datetime.date(2024, 1, 2),datetime.date(2024, 2, 8),datetime.date(2023, 3, 31),datetime.date(2024, 4, 1),datetime.date(2024, 4, 27),datetime.date(2024, 5, 1),datetime.date(2024, 6, 25),datetime.date(2024, 8, 15),datetime.date(2024, 10, 31),datetime.date(2024, 11, 1),datetime.date(2024, 12, 25),datetime.date(2024, 12, 26)]
 
 # Initialize the current date
-start_date = st.date_input("Začetni datum", datetime.date(2019, 7, 6),format="DD.MM.YYYY")
+start_date = st.date_input("Začetni datum", datetime.date.today(),format="DD.MM.YYYY")
 current_date = start_date
 num_days= st.number_input("Koliko delovnih dni kasneje?", value=1, step=1)
 exclude_first_day=st.checkbox("Brez začetnega dneva?")
